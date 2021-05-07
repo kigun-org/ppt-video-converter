@@ -8,7 +8,7 @@
     <Authors>Mihai Tarce</Authors>
     <Description>A light-weight wrapper for Handbrake CLI. Converts all supported formats to a PowerPoint compatible format (MP4 container, H.264, no audio).</Description>
     <Copyright>GPLv3</Copyright>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>video-logo.png</PackageIcon>
   </PropertyGroup>
 
