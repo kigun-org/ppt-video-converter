@@ -42,6 +42,24 @@ You can use the Converter.exe application inside the folder in the following way
 
 You can cancel the currently running job by clicking the 'Cancel' button.
 
+## Building
+
+Requirements:
+
+- Microsoft Visual Studio 2019 (Community Edition) with C# support
+- Microsoft PowerShell
+
+Clone the repository and build it.
+
+## Contributing
+
+Pull requests fixing bugs and improving the already existing features are welcome.
+
+This UI of the application is very simple, this is on purpose. There are therefore no switches
+or parameters to set, neither in the command-line or in the GUI. I'd like to keep it that way,
+as the target audience is not power users. They are encouraged to use HandBrake (CLI) or ffmpeg
+directly.
+
 ## Copyright
 
 This software is developed by Mihai Tarce (mihai@o3dp.org) and released under the GPL v3 open source license.
