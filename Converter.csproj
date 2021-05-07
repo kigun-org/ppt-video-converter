@@ -26,6 +26,7 @@
     <None Remove="HandBrakeCLI\doc\README.markdown" />
     <None Remove="HandBrakeCLI\doc\THANKS.markdown" />
     <None Remove="HandBrakeCLI\HandBrakeCLI.exe" />
+    <None Remove="README.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,12 +48,15 @@
     <Content Include="HandBrakeCLI\doc\THANKS.markdown">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="LICENSE.txt">
+    <Content Include="LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HandBrakeCLI\HandBrakeCLI.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
