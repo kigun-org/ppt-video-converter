@@ -1,4 +1,21 @@
-﻿using System;
+﻿/*
+ *  Converter - easily convert videos to a PowerPoint friendly format.
+ *  Copyright (C) 2021  Mihai Tarce
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +37,7 @@ namespace Converter
      * https://iconarchive.com/show/tropical-waters-folders-icons-by-janosch500.html
      * https://www.deviantart.com/janosch500/art/Green-Tropical-Waters-folders-531656952
      */
-    public partial class Form1 : Form
+public partial class Form1 : Form
     {
         private BackgroundWorker handbrakeWorker;
 
@@ -133,7 +150,7 @@ namespace Converter
         {
             currentQueueItem = e.Argument as QueueItem;
 
-            ProcessStartInfo info = new ProcessStartInfo("HandBrakeCLI.exe");
+            ProcessStartInfo info = new ProcessStartInfo("HandBrakeCLI\\HandBrakeCLI.exe");
 
             // input file
             info.ArgumentList.Add("-i");

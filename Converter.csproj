@@ -18,14 +18,47 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Assets\video-logo.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <None Remove="Assets\LICENSE.txt" />
+    <None Remove="HandBrakeCLI\doc\AUTHORS.markdown" />
+    <None Remove="HandBrakeCLI\doc\COPYING" />
+    <None Remove="HandBrakeCLI\doc\LICENSE" />
+    <None Remove="HandBrakeCLI\doc\NEWS.markdown" />
+    <None Remove="HandBrakeCLI\doc\README.markdown" />
+    <None Remove="HandBrakeCLI\doc\THANKS.markdown" />
+    <None Remove="HandBrakeCLI\HandBrakeCLI.exe" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Assets\LICENSE.txt">
+    <Content Include="HandBrakeCLI\doc\AUTHORS.markdown">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HandBrakeCLI\doc\COPYING">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HandBrakeCLI\doc\LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HandBrakeCLI\doc\NEWS.markdown">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HandBrakeCLI\doc\README.markdown">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HandBrakeCLI\doc\THANKS.markdown">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HandBrakeCLI\HandBrakeCLI.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Assets\video-logo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
